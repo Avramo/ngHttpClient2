@@ -1,2 +1,17 @@
-<app-login *ngIf=" "></app-login>
-<app-homepage></app-homepage>
+
+<app-menu></app-menu>
+<app-login *ngIf="locationSVC.currentLocation == 'loginpage' "></app-login>
+<app-homepage *ngIf="locationSVC.currentLocation == 'homepage' "></app-homepage>
+<app-users *ngIf="locationSVC.currentLocation == 'userspage' "></app-users>
+<app-posts *ngIf="locationSVC.currentLocation == 'postspage' "></app-posts>
+<app-albums *ngIf="locationSVC.currentLocation == 'albumspage' "></app-albums>
+<app-todos *ngIf="locationSVC.currentLocation == 'todospage' "></app-todos>
+
+
+
+<!-- hangeLocation = 'loginpage'">Login</a>
+= 'homepage'">Home</a></li>
+= 'userspage'">Users</a></li>
+= 'postspage'">Posts</a></li>
+= 'albumspage'">Albums</a></li>
+= 'todospage'">Todos</a></li> -->

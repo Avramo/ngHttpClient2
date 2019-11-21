@@ -1,12 +1,17 @@
 <div>
 
-    <label for="usr">User:</label>
-    <input  id="usr" type="text">
+    <label for="usr">Username</label>
+    <input  id="usr" [(ngModel)]='username'>
     <br>
-    <label for="pass">Pass:</label>
-    <input  id="pass" type="password">
+    <label for="pass">Password:</label>
+    <input  id="pass" [(ngModel)]='password'>
     <br>
 
-    <button (click)='login()'></button>
+    <button (click)='login()'> login </button>
 
+</div>
+<br>
+<div style="border: 2px solid blue;">
+    <span>Username:{{username}}</span><br>
+    <span>Password:{{password}}</span>
 </div>

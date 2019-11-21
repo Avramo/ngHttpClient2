@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './comps/pages/login/login.component';
@@ -15,6 +17,7 @@ import { PostComponent } from './comps/items/post/post.component';
 import { TodoComponent } from './comps/items/todo/todo.component';
 import { UserComponent } from './comps/items/user/user.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MenuComponent } from './comps/items/menu/menu.component';
 
 
 @NgModule({
@@ -31,11 +34,13 @@ import { HttpClientModule } from '@angular/common/http';
     PhotoComponent,
     PostComponent,
     TodoComponent,
-    UserComponent
+    UserComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

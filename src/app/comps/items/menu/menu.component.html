@@ -1,0 +1,38 @@
+<ul>
+    <li *ngIf="locationSVC.currentLocation != 'loginpage' ">
+        <a (click)="locationSVC.changeLocation('loginpage')"
+            [ngClass]="locationSVC.currentLocation == 'loginpage' ? 'active' : '' ">
+            Login
+        </a>
+    </li>
+    <li>
+        <a (click)="locationSVC.changeLocation('homepage')"
+        [ngClass]="locationSVC.currentLocation == 'homepage' ? 'active' : '' ">
+                Home
+        </a>
+    </li>
+    <li>
+        <a (click)="locationSVC.changeLocation('userspage')"
+        [ngClass]="locationSVC.currentLocation == 'userspage' ? 'active' : '' ">
+            Users
+         </a>
+    </li>
+    <li>
+        <a (click)="locationSVC.changeLocation('postspage')"
+        [ngClass]="locationSVC.currentLocation == 'postspage' ? 'active' : '' ">
+            Posts
+        </a>
+    </li>
+    <li> 
+        <a (click)="locationSVC.changeLocation('albumspage')"
+        [ngClass]="locationSVC.currentLocation == 'albumspage' ? 'active' : '' ">
+            Albums
+        </a>
+    </li>
+    <li>
+        <a (click)="locationSVC.changeLocation('todospage')"
+        [ngClass]="locationSVC.currentLocation == 'todospage' ? 'active' : '' ">
+            Todos
+     </a>
+    </li>
+  </ul>
